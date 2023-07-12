@@ -1,11 +1,11 @@
-export const PostCard = ({post}) => {
+export const PostCard = ({title, body, cover}) => {
 
     return (
         <div className="post">
-            <img src={post.cover.url} alt={post.cover.title} />
+            <img src={cover.url} alt={cover.title} />
             <div className="post-content">
-            <h1>{post.title}</h1>
-            <p>{post.body}</p>
+            <h2>{title}</h2>
+            <p>{body}</p>
             </div>
         </div>
     );
